@@ -58,6 +58,7 @@ public class List_Adapter extends RecyclerView.Adapter<List_Adapter.ViewHolder> 
         }
 
         void bindData(final List_Meme item){
+            imagen.setImageResource(item.getImagen());
             nombrememe.setText(item.getNombre());
             descripcion.setText(item.getDescripcion());
             itemView.setOnClickListener(new View.OnClickListener() {
